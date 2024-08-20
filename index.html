@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .main{
+    
+     display: flex;
+     border: solid;
+     border-width: 1px;
+     background-color: rgb(51, 41, 41);
+   }
+   img
+   {
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+     height: 30vh;
+     width:30vw;
+     border-radius:50%;
+   }
+   #two
+   {
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    background-color: white;
+   }
+   #name
+   {
+    text-align:center;
+    font-size: 30px;
+    padding: 2px; 
+   }
+   .sub
+   {
+     display: flex;
+     flex-wrap: wrap;
+     background-color: rgb(51, 41, 41);
+   }
+   #three{
+    margin-top:20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width:25vw ;
+    height:35vh;
+    font-size: 20px;
+    background-color: white;
+   }
+   #four
+   {
+    margin-top:20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 30vw ;
+    height:30vh;
+    font-size: 20px;
+    background-color: white;
+   }
+   #five
+   {
+    margin-top:20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width:30vw ;
+    height:30vh;
+    font-size: 20px;
+    background-color: white;
+    
+   }
+   @media (max-width: 800px) {
+  #three,#four,#five {
+    flex: 100%;
+  }
+}
+.head
+{
+  text-align: center;
+  text-decoration:underline;
+}
+*{
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.contact
+{
+  text-align: center;
+}
+#contact1
+{
+  
+  margin-top: 30px;
+}
+</style>
+<script>
+  function movingname()
+  {
+    let a1=document.getElementById("name");
+    a1.innerHTML="Iam Asritha Kasireddy";
+  }
+  setInterval(movingname,3000);
+</script>
+<body>
+  <p id="name">
+    Hi all....
+  </p>
+   <div class="main">
+        <div id="one">
+          <img src=".\images\asritha.jpg">
+        </div>
+        <div id="two">
+              Iam an enthusiast who is interested in learning new 
+              technologies and skills and also interested
+              in photography.Iam a person with personality traits of pateince,quick learner,team player and adaptive.
+        </div>
+      </div>
+      <br>
+    <div class="sub">
+      <div class="sub1" id="three" >
+         <h3 class="head">SKILLS</h3>
+         <ul >
+          <li>C++ with data structures</li>
+          <li>Java
+          </li>
+          <li>C
+          </li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java Script</li>
+         </ul>
+      </div>
+      <div  class="sub1" id="four">
+        <h3 class="head">ACHIEVEMENTS</h3>
+        <ul>
+           <li>Cerificate of completion of Database design course</li>
+           <li>Cerificate of completion of Cybersecurity course</li>
+        </ul>
+      </div>
+      <div class="sub1" id="five" >
+         <h3 class="head">INTERESTS</h3>
+         <ul>
+          <li>Web developing</li>
+          <li>Photography</li>
+          <li>Vedio Editing</li>
+          <li>Playing games</li>
+         </ul>
+      </div>
+    </div>
+    <div id="contact1">
+    <p class="contact" >You can contact me through<br>
+    <a href="https://www.linkedin.com/in/asritha-kasireddy-3b360322a">LinkedIn</a><br>
+    Some of my best clicks<br>
+    <a href="Photos.html">Photos</a></p>
+  </div>
+</body>
+</html>
